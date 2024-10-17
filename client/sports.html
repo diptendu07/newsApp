@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News 24*7 Online</title>
+        <link rel="stylesheet" href="sports.css"> <!-- Link to the CSS file -->
+        <link rel="stylesheet" href="chat.css">
+    </head>
+
+<!-- header.html -->
+<header style="background-color: #2C3E50; color: white; padding: 15px 20px; display: flex; justify-content: flex-end; align-items: center; position: relative;">
+    <div class="logo" style="position: absolute; top: 10px; left: 20px;">
+      <!-- Add your logo or text here -->
+      <a href="logo.html">
+        <img src="./logo/360_F_179146215_NEoBhSC2oKw9hwX7K3hAkAPLZueAeGEs.jpg" alt="Logo" style="max-height: 50px;">
+      </a>
+    </div>
+    <nav style="flex: 1; text-align: right;">
+      <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: flex-end;">
+        <li style="margin-right: 20px;"><a href="home.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+        <li style="margin-right: 20px;"><a href="news.html" style="color: white; text-decoration: none; font-weight: bold;">News</a></li>
+        <li style="margin-right: 20px;"><a href="sports.html" style="color: white; text-decoration: none; font-weight: bold;">Sports</a></li>
+        <li style="margin-right: 20px;"><a href="contactus.html" style="color: white; text-decoration: none; font-weight: bold;">Contact Us</a></li>
+        <li><a href="aboutus.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
+      </ul>
+    </nav>
+</header>  
+
+
+<body>   
+
+    <!-- Image Slider Section -->
+    <section style="margin: 20px auto; max-width: 80%;">
+        <div class="slider-container" style="position: relative; max-width: 100%; overflow: hidden;">
+            <div id="slider-container" style="display: flex; overflow: hidden;"></div> <!-- Image slider -->
+            <a id="prevBtn" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 24px; color: white; text-decoration: none;" href="javascript:void(0)">&#10094;</a>
+            <a id="nextBtn" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); font-size: 24px; color: white; text-decoration: none;" href="javascript:void(0)">&#10095;</a>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Headlines Today</h2>
+        <div id="sports-container" class="container"></div>
+    </section>
+
+    <div>
+      <div class="chatbox" id="chatbox">
+          <div class="chat-header">
+              <h3>Group Chat</h3>
+              <button id="toggle-button">_</button>
+          </div>
+          <div class="chat-body" id="chat-body">
+              <ul id="messages"></ul>
+          </div>
+          <div class="chat-footer" id="chat-footer">
+              <form id="form" action="">
+                  <div class="input-group">
+                      <input id="username" placeholder="Username" autocomplete="off" required />
+                      <input id="input" placeholder="Message" autocomplete="off" required />
+                  </div>
+                  <button>Send</button>
+              </form>
+          </div>
+      </div>
+  
+      <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+      <script src="chat.js"></script> <!-- External JS file -->
+  </div>
+
+    <footer style="background-color: #2C3E50; color: white; text-align: center; padding: 20px 0; position: relative; bottom: 0; width: 100%; font-family: Arial, sans-serif;">
+        <p style="margin: 0; font-size: 14px;">All rights reserved. Established on 2023.</p>
+    </footer>
+
+    <script src="sports.js"></script>
+</body>
+</html>

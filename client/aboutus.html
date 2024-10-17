@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News 24*7 Online</title>
+        <link rel="stylesheet" href="aboutus.css"> <!-- Link to the CSS file -->
+        <link rel="stylesheet" href="chat.css">
+        <!-- Leaflet CSS for map styling -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />        
+    </head>
+
+<!-- header.html -->
+<header style="background-color: #2C3E50; color: white; padding: 15px 20px; display: flex; justify-content: flex-end; align-items: center; position: relative;">
+    <div class="logo" style="position: absolute; top: 10px; left: 20px;">
+        <a href="logo.html">
+            <img src="./logo/360_F_179146215_NEoBhSC2oKw9hwX7K3hAkAPLZueAeGEs.jpg" alt="Logo" style="max-height: 50px;">
+        </a>
+    </div>
+    <nav style="flex: 1; text-align: right;">
+        <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: flex-end;">
+            <li style="margin-right: 20px;"><a href="home.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+            <li style="margin-right: 20px;"><a href="news.html" style="color: white; text-decoration: none; font-weight: bold;">News</a></li>
+            <li style="margin-right: 20px;"><a href="sports.html" style="color: white; text-decoration: none; font-weight: bold;">Sports</a></li>
+            <li style="margin-right: 20px;"><a href="contactus.html" style="color: white; text-decoration: none; font-weight: bold;">Contact Us</a></li>
+            <li><a href="aboutus.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>At <strong>News 24*7 Online</strong>, our mission is to provide accurate, timely, and comprehensive news coverage that keeps our audience informed and engaged. We strive to be a trusted source of information, delivering news with integrity and responsibility.</p>
+        </section>
+
+        <section class="who-we-are">
+            <h2>Who We Are</h2>
+            <p>Founded in <strong>2024</strong>, we are a dedicated team of journalists, reporters, and media professionals committed to delivering high-quality news content across various platforms. Our news channel is driven by a passion for storytelling and a commitment to uncovering the truth.</p>
+        </section>
+
+        <section class="values">
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Integrity:</strong> Upholding the highest standards of journalism.</li>
+                <li><strong>Transparency:</strong> Providing clear and accessible information.</li>
+                <li><strong>Community Engagement:</strong> Connecting with our audience and listening to their needs.</li>
+            </ul>
+        </section>
+
+        <section class="coverage">
+            <h2>Our Coverage</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>National News</strong></td>
+                        <td>In-depth reporting on events and issues within the country.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>International News</strong></td>
+                        <td>Updates on global affairs and international developments.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Politics</strong></td>
+                        <td>Insightful analysis of political events and policies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Economy</strong></td>
+                        <td>Coverage of financial markets, business news, and economic trends.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Health</strong></td>
+                        <td>Reporting on health issues, medical advancements, and public health initiatives.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technology</strong></td>
+                        <td>Updates on tech innovations, gadget reviews, and industry trends.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Entertainment</strong></td>
+                        <td>News on movies, music, and celebrity happenings.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sports</strong></td>
+                        <td>Coverage of local and international sports events and highlights.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="why-choose-us">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Expertise:</strong> Our team consists of seasoned journalists with years of experience in the field.</li>
+                <li><strong>Diverse Perspectives:</strong> We offer a platform for various voices and opinions to foster balanced reporting.</li>
+                <li><strong>Community Focus:</strong> We prioritize stories that matter to our viewers and contribute positively to the community.</li>
+            </ul>
+        </section>
+
+        <section class="join-us">
+            <h2>Join Us</h2>
+            <p>We invite you to stay connected with <strong>News 24*7 Online</strong> through our website and social media channels. Together, let's foster a well-informed society.</p>
+        </section>
+        <br>
+        <h1>Locate Us</h1>    
+
+        <!-- Map to display the location -->
+        <div id="map"></div>
+
+        <!-- Location details -->
+        <div id="info"></div>
+
+        <!-- Leaflet JS for map functionality -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+        <script src="aboutus.js"></script> <!-- Link to the external JS file -->
+
+        <div>
+            <div class="chatbox" id="chatbox">
+                <div class="chat-header">
+                    <h3>Group Chat</h3>
+                    <button id="toggle-button">_</button>
+                </div>
+                <div class="chat-body" id="chat-body">
+                    <ul id="messages"></ul>
+                </div>
+                <div class="chat-footer" id="chat-footer">
+                    <form id="form" action="">
+                        <div class="input-group">
+                            <input id="username" placeholder="Username" autocomplete="off" required />
+                            <input id="input" placeholder="Message" autocomplete="off" required />
+                        </div>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        
+            <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+            <script src="chat.js"></script> <!-- External JS file -->
+        </div>
+
+        <footer>
+            <p>&copy; 2024 News 24*7 Online. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

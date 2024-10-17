@@ -1,0 +1,82 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d00; /* Dark green background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+    color: #004d00; /* Dark green for section titles */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item {
+    background: #fff; /* White background for news items */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+    padding: 15px;
+    width: 300px; /* Fixed width for items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.item img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+}
+
+#prevBtn, #nextBtn {
+    cursor: pointer; /* Change cursor to pointer */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}

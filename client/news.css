@@ -1,0 +1,153 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d00; /* Dark green background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Adjusted padding */
+    text-align: center;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+    color: #004d00; /* Dark green for section titles */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    margin: 0 auto;
+    padding: 10px; /* Reduced padding */
+}
+
+.item {
+    background: #fff; /* White background for news items */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px;
+    padding: 10px; /* Reduced padding */
+    width: 280px; /* Fixed width for items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.item img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+}
+
+#prevBtn, #nextBtn {
+    cursor: pointer; /* Change cursor to pointer */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* White text */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
+#city {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#city:focus {
+    border-color: #004d00; /* Dark green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+#getWeather {
+    background-color: #004d00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#getWeather:hover {
+    background-color: #003300; /* Darker green on hover */
+}
+
+.weather-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background for results */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.weather-result p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Styling for the temperature and city name */
+.weather-result .city-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #004d00; /* Dark green city name */
+}
+
+.weather-result .temperature {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff4500; /* Vibrant orange for temperature */
+}
+
+.weather-result .description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #city {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+

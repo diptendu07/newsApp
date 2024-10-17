@@ -1,0 +1,80 @@
+/* Form Styling */
+#contactForm {
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Spacing inside the form */
+    width: 100%;
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center form */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font styling */
+}
+
+#contactForm h1 {
+    color: #333; /* Dark text color for the heading */
+    text-align: center; /* Center the heading */
+    font-size: 2.5em; /* Heading size */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+#contactForm label {
+    font-size: 1.1em; /* Label font size */
+    color: #333; /* Label text color */
+    margin-bottom: 5px; /* Spacing below label */
+    display: inline-block; /* Make labels block elements */
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Spacing inside inputs */
+    margin: 10px 0 20px 0; /* Vertical spacing */
+    border-radius: 5px; /* Rounded edges */
+    border: 1px solid #ccc; /* Light gray border */
+    font-size: 1em; /* Input font size */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #007BFF; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#contactForm textarea {
+    height: 120px; /* Set a specific height for the textarea */
+    resize: none; /* Disable resizing */
+}
+
+#contactForm button {
+    display: block; /* Button as block element */
+    width: 100%; /* Full width button */
+    padding: 15px; /* Spacing inside button */
+    font-size: 1.2em; /* Button font size */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Button hover effects */
+}
+
+#contactForm button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Responsive Design for Form */
+@media (max-width: 768px) {
+    #contactForm {
+        width: 90%; /* Responsive form width */
+    }
+
+    #contactForm h1 {
+        font-size: 2em; /* Responsive heading size */
+    }
+
+    #contactForm button {
+        font-size: 1em; /* Responsive button font size */
+    }
+}
