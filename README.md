@@ -19,7 +19,7 @@ newsApp
 # Pushing in Github and DockerHub
 ---------------------------------
 
->> GitHub Respirory Link: https://github.com/diptendu07/newsApp/tree/master
+>> GitHub Respirory Link: https://github.com/diptendu07/newsApp
 
 >> DockerHub Link: 
 
